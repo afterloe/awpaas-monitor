@@ -1,11 +1,13 @@
 package cn.cityworks
 
+import de.codecentric.boot.admin.config.EnableAdminServer
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient
 
 @SpringBootApplication
-@EnableEurekaServer
+@EnableAdminServer
+@EnableDiscoveryClient
 class Launch
 
 fun main(args: Array<String>) {

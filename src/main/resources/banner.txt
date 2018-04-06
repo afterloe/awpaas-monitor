@@ -5,4 +5,4 @@
 
 author:     afterloe.L
 mail:       lm6289511@gmail.com
-version:    repository 1.0.0
+version:    monitor 1.0.0
