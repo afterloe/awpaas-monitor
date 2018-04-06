@@ -43,7 +43,7 @@ repositories {
 }
 
 ext {
-    springCloudVersion = 'Finchley.M9'
+    springCloudVersion = "Finchley.M9"
 }
 
 // 去除 tomcat 依赖
@@ -55,7 +55,8 @@ dependencies {
     compile group: "org.springframework.boot", name: "spring-boot-starter-webflux"
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-undertow' // undertow web container
     compile group: "org.springframework.boot", name: "spring-boot-starter-actuator" // spring boot actuator
-    compile group: "org.springframework.cloud", name: "spring-cloud-starter-eureka" // spring cloud eureka client
+    compile group: "org.springframework.cloud", name: "spring-cloud-starter-netflix-eureka-client" // spring cloud eureka client
+    compile group: "org.springframework.cloud", name: "spring-cloud-starter-netflix-zuul" // spring cloud zuul
     compile group: "de.codecentric", name: "spring-boot-admin-starter-server", version: "1.5.7" // spring admin server
 
     compile group: "com.fasterxml.jackson.module", name: "jackson-module-kotlin"
